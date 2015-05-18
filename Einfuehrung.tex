@@ -12,6 +12,7 @@
 \usepackage{textcomp}
 \usepackage{epstopdf}
 \usepackage{lmodern}
+\usepackage[babel,german=quotes]{csquotes} % Für gute Anführungszeichen
 \usepackage[T1]{fontenc}
 \usepackage{todonotes}
 \let\todox\todo
@@ -543,33 +544,53 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
 
 %  was ihr braucht
 \begin{frame}[fragile]
-\frametitle{was brauche ich?}
+\frametitle{Benutzung}
  \begin{semiverbatim}
-    \uncover<1->{ im gleichen ordner eine datei}
-    \uncover<1->{ an entsprechenden stellen ein \\cite\{...\} }
-    \uncover<1->{ kapitel quellen: \\bibliography\{alpha\} und .. }
+    \uncover<1->{ Im \textbf{gleichen Ordner} eine Datei }
+    \uncover<1->{ mit den Daten der Quellen}
+    \uncover<1->{  }
+    \uncover<2->{ an den entsprechenden Stellen}
+    \uncover<2->{ im Dokument ein \\cite\{...\} }  
+    \uncover<2->{  } 
+    \uncover<3->{ Ein Kapitel Quellenverzeichnis }
   \end{semiverbatim}
-
-
-
-%     \begin{semiverbatim}
-%     \begin{itemize}
-%       \item Im \textbf{gleichen} Ordner die Datei
-%       \item an den stellen dann  \\cite{...}
-%       \item da wo die quellen hinsollen ein \\bibliographystyle{alpha}  und ein \\bibliography{name\_der\_datenbank}
-%     \end{itemize}
-%     \end{semiverbatim}
 \end{frame}
-
-
 
 % wie ihr es macht:
 
 
 
-%     \item { \bibliographystyle{alpha}}}
-%     \text{\bibliography{name_der_datenbank}}
-  
+%  Datei:
+
+\begin{frame}[fragile]
+\frametitle{Datei}
+ \begin{semiverbatim}
+    \uncover<1->{ 'Datenbank'  (hier bibo.bib)}
+    \uncover<2->{
+    \begin{figure}
+      \includegraphics[width=0.7\textwidth]{tex_bibo_bib.png}
+      \caption{Datenbank, meistens kann man das einfach Copy-Pasten}
+    \end{figure}}
+  \end{semiverbatim}
+\end{frame}
+
+%  CITE:
+\begin{frame}[fragile]
+\frametitle{cite-befehl}
+ \begin{semiverbatim}
+    \uncover<1->{\\cite\{keyword\} ; in vorigem Bsp \\cite\{buch1\}}
+  \end{semiverbatim}
+\end{frame}
+
+% abschnitt quellenverzeichnis:
+\begin{frame}[fragile]
+\frametitle{Abschnitt \enquote\{Quellenverzeichnis\}}
+ \begin{semiverbatim}
+    \uncover<1->{\\bibliographystyle\{alpha\}}
+    \uncover<2->{\\bibliography\{name_der_datenbank\}}
+  \end{semiverbatim}
+\end{frame}
+
 
 
 \section{Referenzen}
@@ -714,6 +735,15 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
     \item<5-> Fehlt evtl ein \alert<5>{usepackage}?
     \item<6-> Google zu dem Fehler befragen
   \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+ \begin{center}
+  \Large \uncover<1->{Gibt es Fragen?} \\
+  \uncover<2>{Das war's - Danke für Eure Aufmerksamkeit}
+ \end{center}
 \end{frame}
 
 

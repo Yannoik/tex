@@ -339,22 +339,22 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
              \end{enumerate}}
 \end{frame}
 
-\subsection{Textformatierung - Eigene Symbole}
-\begin{frame}[fragile]
-\frametitle{Aufzählungen - Eigene Symbole}
-  \begin{semiverbatim}
-    \uncover<1->{\\begin\{itemize\}}
-    \uncover<2->{  \\item\alert<2>{[1tens]} Erstes Listenelement}
-    \uncover<2->{  \\item\alert<2>{[2tens]} Zweites Listenelement}
-    \uncover<2->{  \\item\alert<2>{[3tens]} Drittes Listenelement}
-    \uncover<1->{\\end\{itemize\}}
-  \end{semiverbatim}
-\uncover<3->{\begin{itemize}
-              \item[1tens] Erstes Listenelement
-              \item[2tens] Zweites Listenelement
-              \item[3tens] Drittes Listenelement
-             \end{itemize}}
-\end{frame}
+% \subsection{Textformatierung - Eigene Symbole}
+% \begin{frame}[fragile]
+% \frametitle{Aufzählungen - Eigene Symbole}
+%   \begin{semiverbatim}
+%     \uncover<1->{\\begind\{itemize\}}
+%     \uncover<2->{  \\item\alert<2>{[1tens]} Erstes Listenelement}
+%     \uncover<2->{  \\item\alert<2>{[2tens]} Zweites Listenelement}
+%     \uncover<2->{  \\item\alert<2>{[3tens]} Drittes Listenelement}
+%     \uncover<1->{\\end\{itemize\}}
+%   \end{semiverbatim}
+% \uncover<3->{\begin{itemize}
+%               \item[1tens] Erstes Listenelement
+%               \item[2tens] Zweites Listenelement
+%               \item[3tens] Drittes Listenelement
+%              \end{itemize}}
+% \end{frame}
 
 
 \section{Tabellen}
@@ -394,25 +394,25 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
     \end{tabular}}
 \end{frame}
 
-\subsection{Erweiterte Tabellenfunktionen}
-\begin{frame}[fragile]
-\frametitle{Tabellen}
-  \begin{semiverbatim}
-    \uncover<1->{\\begin\{tabular\}\{|l||c|c|c||r|\}}
-    \uncover<1->{  \\hline}
-    \uncover<1->{  A & 1 & 2 & 3 & Ein \alert<2>{\\vline} Beispiel \\\\\\hline}
-    \uncover<1->{  B & 4 & 5 & 6 & Weitere Zeile \\\\\\hline \\hline}
-    \uncover<1->{  C & \alert<3>{\\multicolumn\{3\}\{c||\}\{7 8 9\}} & Ende \\\\\\hline}
-    \uncover<1->{\\end\{tabular\}}
-  \end{semiverbatim}
-  \uncover<4->{%
-  \begin{tabular}{|l||c|c|c||r|}
-    \hline
-    A & 1 & 2 & 3 & Ein \vline Beispiel \\\hline
-    B & 4 & 5 & 6 & Weitere Zeile \\\hline \hline
-    C & \multicolumn{3}{c||}{7 8 9} & Ende \\\hline
-  \end{tabular}}
-\end{frame}
+% \subsection{Erweiterte Tabellenfunktionen}
+% \begin{frame}[fragile]
+% \frametitle{Tabellen}
+%   \begin{semiverbatim}
+%     \uncover<1->{\\begin\{tabular\}\{|l||c|c|c||r|\}}
+%     \uncover<1->{  \\hline}
+%     \uncover<1->{  A & 1 & 2 & 3 & Ein \alert<2>{\\vline} Beispiel \\\\\\hline}
+%     \uncover<1->{  B & 4 & 5 & 6 & Weitere Zeile \\\\\\hline \\hline}
+%     \uncover<1->{\\end\{tabular\}}
+%   \end{semiverbatim}
+%   \uncover<4->{%
+%   \begin{tabular}{|l||c|c|c||r|}
+%     \hline
+%     A & 1 & 2 & 3 & Ein \vline Beispiel \\\hline
+%     B & 4 & 5 & 6 & Weitere Zeile \\\hline \hline
+%   \end{tabular}}
+% \end{frame}
+%     \uncover<1->{  C & \alert<3>{\\multicolumn\{3\}\{c||\}\{7 8 9\}} & Ende \\\\\\hline}
+%     C & \multicolumn{3}{c||}{7 8 9} & Ende \\\hline
 
 \subsection{Tabular-Umgebung}
 \begin{frame}[fragile]
@@ -553,12 +553,10 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
     \uncover<2->{ im Dokument ein \\cite\{...\} }  
     \uncover<2->{  } 
     \uncover<3->{ Ein Kapitel Quellenverzeichnis }
+    \uncover<3->{  } 
+    \uncover<4->{2x kompilieren (!)}
   \end{semiverbatim}
 \end{frame}
-
-% wie ihr es macht:
-
-
 
 %  Datei:
 
@@ -567,9 +565,9 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
  \begin{semiverbatim}
     \uncover<1->{ 'Datenbank'  (hier bibo.bib)}
     \uncover<2->{
-    \begin{figure}
-      \includegraphics[width=0.7\textwidth]{tex_bibo_bib.png}
-      \caption{Datenbank, meistens kann man das einfach Copy-Pasten}
+    \begin{figure}[h!]
+      \includegraphics[width=0.6\textwidth]{tex_bibo_bib.png}
+      \caption{Datenbank, meistens kann man das einfach Copy-Pasten/runterladen}
     \end{figure}}
   \end{semiverbatim}
 \end{frame}
@@ -591,6 +589,44 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
   \end{semiverbatim}
 \end{frame}
 
+
+
+\begin{frame}[fragile]
+\frametitle{style: alpha -> Quellenverzeichnis sieht etwa so aus:}
+ \begin{semiverbatim}
+    \uncover<1->{
+    \begin{figure}[h!]
+      \includegraphics[width=0.6\textwidth]{bibstyle_alpha.png}
+      \caption{Verwendung von \\bibliographystyle\{alpha\} liefert obiges Format}
+    \end{figure}}
+  \end{semiverbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{style: plain -> Quellenverzeichnis sieht etwa so aus:}
+ \begin{semiverbatim}
+    \uncover<1->{
+    \begin{figure}[h!]
+      \includegraphics[width=0.6\textwidth]{bibstyle_plain.png}
+      \caption{Verwendung von \\bibliographystyle\{plain\} liefert obiges Format}
+    \end{figure}}
+  \end{semiverbatim}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{style: apalike -> Quellenverzeichnis sieht etwa so aus:}
+ \begin{semiverbatim}
+    \uncover<1->{
+    \begin{figure}[h!]
+      \includegraphics[width=0.6\textwidth]{bibstyle_apalike.png}
+      \caption{Verwendung von \\bibliographystyle\{apalike\} liefert obiges Format \\     Weitere 
+      Styles unter \url{http://jonashartz.net/2013/08/latex-welchen-bibliographystyle-wahlen}
+}
+    \end{figure}}
+  \end{semiverbatim}
+\end{frame}
 
 
 \section{Referenzen}
@@ -654,21 +690,21 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
   \end{semiverbatim}
 \end{frame}
 
-\subsection{Funktionenreferenz}
-\begin{frame}[fragile]
-\frametitle{Referenzen auf Funktionen}
-  \begin{semiverbatim}
-    \uncover<1->{\\begin\{align\}}
-    \uncover<1->{  sin(\\alpha) = \\frac\{a\}\{c\}\\\\}
-    \uncover<1->{  a^2 + b^2 = c^2 \alert<1>{\\label\{pyth\}}}
-    \uncover<1->{\\end\{align\}}
-    \uncover<1->{}
-    \uncover<1->{}
-    \uncover<1->{}
-    \uncover<2->{wie Formel \alert<2>{\\ref\{pyth\}} \hspace{2cm} wie Formel 7}
-    \uncover<3->{auf Seite \alert<3>{\\pageref\{pyth\}} \hspace{1cm} auf Seite 9}
-  \end{semiverbatim}
-\end{frame}
+% \subsection{Funktionenreferenz}
+% \begin{frame}[fragile]
+% \frametitle{Referenzen auf Funktionen}
+%   \begin{semiverbatim}
+%     \uncover<1->{\\begin\{align\}}
+%     \uncover<1->{  sin(\\alpha) = \\frac\{a\}\{c\}\\\\}
+%     \uncover<1->{  a^2 + b^2 = c^2 \alert<1>{\\label\{pyth\}}}
+%     \uncover<1->{\\end\{align\}}
+%     \uncover<1->{}
+%     \uncover<1->{}
+%     \uncover<1->{}
+%     \uncover<2->{wie Formel \alert<2>{\\ref\{pyth\}} \hspace{2cm} wie Formel 7}
+%     \uncover<3->{auf Seite \alert<3>{\\pageref\{pyth\}} \hspace{1cm} auf Seite 9}
+%   \end{semiverbatim}
+% \end{frame}
 
 \subsection{Tabellenreferenzen}
 \begin{frame}[fragile]
@@ -734,6 +770,7 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
     \item<4-> Hat jedes \alert<4>{begin} auch ein \alert<4>{end}?
     \item<5-> Fehlt evtl ein \alert<5>{usepackage}?
     \item<6-> Google zu dem Fehler befragen
+    \item<7-> \url{http://tinyurl.com/texcrashkurs}
   \end{itemize}
 \end{frame}
 

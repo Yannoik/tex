@@ -364,81 +364,81 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
   \Huge Tabellen
  \end{center}
 \end{frame}
-
-\subsection{Grundlage}
-\begin{frame}[fragile]
-\frametitle{Tabellen}
-  \begin{semiverbatim}
-    \uncover<1->{\\begin\{tabular\}\alert<2>{\{|l|c|r|\}}}
-    \uncover<1->{  \alert<4>{\\hline}}
-    \uncover<1->{  Tabelle \alert<3>{&} mit \alert<3>{&} drei Spalten \\\\ \alert<4>{\\hline}}
-    \uncover<1->{  aber \alert<3>{&} nur mit zwei \alert<3>{&} Zeilen \\\\ \alert<4>{\\hline}}
-    \uncover<1->{\\end\{tabular\}}
-  \end{semiverbatim}
-  \uncover<5->{%
-    \begin{tabular}{|l|c|r|}\hline
-      Tabelle & mit & drei Spalten \\\hline
-      aber & nur mit zwei & Zeilen \\\hline
-    \end{tabular}}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Tabellen}
-  \begin{semiverbatim}
-    \uncover<1->{\\begin\{tabular\}\{|c|\alert<1>{p\{2cm\}}|\alert<1>{p\{4cm\}}\}}
-    \uncover<1->{  1. S. & 2. S. mit 2cm & 3. S. mit 4cm}
-    \uncover<1->{\\end\{tabular\}}
-  \end{semiverbatim}
-  \uncover<2->{%
-    \begin{tabular}{|c|p{2cm}|p{4cm}}
-      1. S. & 2. S. mit 2cm & 3. S. mit 4cm
-    \end{tabular}}
-\end{frame}
-
- \subsection{Erweiterte Tabellenfunktionen}
- \begin{frame}[fragile]
- \frametitle{Tabellen}
-   \begin{semiverbatim}
-     \uncover<1->{\\begin\{tabular\}\{|l||c|c|c||r|\}}
-     \uncover<1->{  \\hline}
-     \uncover<1->{  A & 1 & 2 & 3 & Ein \alert<2>{\\vline} Beispiel \\\\\\hline}
-     \uncover<1->{  B & 4 & 5 & 6 & Weitere Zeile \\\\\\hline \\hline}
-     \uncover<1->{\\end\{tabular\}}
-   \end{semiverbatim}
-   \uncover<4->{%
-   \begin{tabular}{|l||c|c|c||r|}
-     \hline
-     A & 1 & 2 & 3 & Ein \vline Beispiel \\\hline
-     B & 4 & 5 & 6 & Weitere Zeile \\\hline \hline
-   \end{tabular}}
- \end{frame}
-     \uncover<1->{  C & \alert<3>{\\multicolumn\{3\}\{c||\}\{7 8 9\}} & Ende \\\\\\hline}
-     C & \multicolumn{3}{c||}{7 8 9} & Ende \\\hline
-
-
-\subsection{Tabular-Umgebung}
-\begin{frame}[fragile]
-\frametitle{Tabular-Umgebung}
-  \begin{semiverbatim}
-    \uncover<2->{\alert<2>{\\begin\{table\}}}
-    \uncover<1->{  \\begin\{tabular\}\{|l|c|r|\}}
-    \uncover<1->{    \\hline}
-    \uncover<1->{    Tabelle & mit & drei Spalten \\\\ \\hline}
-    \uncover<1->{    aber & nur mit zwei & Zeilen \\\\ \\hline}
-    \uncover<1->{  \\end\{tabular\}}
-    \uncover<3->{  \alert<3>{\\caption\{}Einfaches Tabellenbeispiel\alert<3>{\}}}
-    \uncover<2->{\alert<2>{\\end\{table\}}}
-  \end{semiverbatim}
-  \uncover<4->{%
-    \begin{table}
-      \begin{tabular}{|l|c|r|}
-	\hline
-	Tabelle & mit & drei Spalten \\\hline
-	aber & nur mit zwei & Zeilen \\\hline
-      \end{tabular}
-      \caption{Einfaches Tabellenbeispiel}
-    \end{table}}
-\end{frame}
+% 
+% \subsection{Grundlage}
+% \begin{frame}[fragile]
+% \frametitle{Tabellen}
+%   \begin{semiverbatim}
+%     \uncover<1->{\\begin\{tabular\}\alert<2>{\{|l|c|r|\}}}
+%     \uncover<1->{  \alert<4>{\\hline}}
+%     \uncover<1->{  Tabelle \alert<3>{&} mit \alert<3>{&} drei Spalten \\\\ \alert<4>{\\hline}}
+%     \uncover<1->{  aber \alert<3>{&} nur mit zwei \alert<3>{&} Zeilen \\\\ \alert<4>{\\hline}}
+%     \uncover<1->{\\end\{tabular\}}
+%   \end{semiverbatim}
+%   \uncover<5->{%
+%     \begin{tabular}{|l|c|r|}\hline
+%       Tabelle & mit & drei Spalten \\\hline
+%       aber & nur mit zwei & Zeilen \\\hline
+%     \end{tabular}}
+% \end{frame}
+% 
+% \begin{frame}[fragile]
+% \frametitle{Tabellen}
+%   \begin{semiverbatim}
+%     \uncover<1->{\\begin\{tabular\}\{|c|\alert<1>{p\{2cm\}}|\alert<1>{p\{4cm\}}\}}
+%     \uncover<1->{  1. S. & 2. S. mit 2cm & 3. S. mit 4cm}
+%     \uncover<1->{\\end\{tabular\}}
+%   \end{semiverbatim}
+%   \uncover<2->{%
+%     \begin{tabular}{|c|p{2cm}|p{4cm}}
+%       1. S. & 2. S. mit 2cm & 3. S. mit 4cm
+%     \end{tabular}}
+% \end{frame}
+% 
+%  \subsection{Erweiterte Tabellenfunktionen}
+%  \begin{frame}[fragile]
+%  \frametitle{Tabellen}
+%    \begin{semiverbatim}
+%      \uncover<1->{\\begin\{tabular\}\{|l||c|c|c||r|\}}
+%      \uncover<1->{  \\hline}
+%      \uncover<1->{  A & 1 & 2 & 3 & Ein \alert<2>{\\vline} Beispiel \\\\\\hline}
+%      \uncover<1->{  B & 4 & 5 & 6 & Weitere Zeile \\\\\\hline \\hline}
+%      \uncover<1->{\\end\{tabular\}}
+%    \end{semiverbatim}
+%    \uncover<4->{%
+%    \begin{tabular}{|l||c|c|c||r|}
+%      \hline
+%      A & 1 & 2 & 3 & Ein \vline Beispiel \\\hline
+%      B & 4 & 5 & 6 & Weitere Zeile \\\hline \hline
+%    \end{tabular}}
+%  \end{frame}
+%      \uncover<1->{  C & \alert<3>{\\multicolumn\{3\}\{c||\}\{7 8 9\}} & Ende \\\\\\hline}
+%      C & \multicolumn{3}{c||}{7 8 9} & Ende \\\hline
+% 
+% 
+% \subsection{Tabular-Umgebung}
+% \begin{frame}[fragile]
+% \frametitle{Tabular-Umgebung}
+%   \begin{semiverbatim}
+%     \uncover<2->{\alert<2>{\\begin\{table\}}}
+%     \uncover<1->{  \\begin\{tabular\}\{|l|c|r|\}}
+%     \uncover<1->{    \\hline}
+%     \uncover<1->{    Tabelle & mit & drei Spalten \\\\ \\hline}
+%     \uncover<1->{    aber & nur mit zwei & Zeilen \\\\ \\hline}
+%     \uncover<1->{  \\end\{tabular\}}
+%     \uncover<3->{  \alert<3>{\\caption\{}Einfaches Tabellenbeispiel\alert<3>{\}}}
+%     \uncover<2->{\alert<2>{\\end\{table\}}}
+%   \end{semiverbatim}
+%   \uncover<4->{%
+%     \begin{table}
+%       \begin{tabular}{|l|c|r|}
+% 	\hline
+% 	Tabelle & mit & drei Spalten \\\hline
+% 	aber & nur mit zwei & Zeilen \\\hline
+%       \end{tabular}
+%       \caption{Einfaches Tabellenbeispiel}
+%     \end{table}}
+% \end{frame}
 
 
 \section{Grafiken}
@@ -447,19 +447,19 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
   \Huge Grafiken
  \end{center}
 \end{frame}
-
-\subsection{Grafiken einbinden}
-\begin{frame}[fragile]
-\frametitle{Grafiken einbinden}
-  \uncover<1-> {Im Header wird ein weiteres Paket benötigt, um Grafiken einbinden zu können}
-  \begin{semiverbatim}
-    \uncover<1->{\\documentclass[a4paper,11pt,DIV=11]\{scrartcl\}}
-    \uncover<1->{\\usepackage[utf8]\{inputenc\}}
-    \uncover<1->{\\usepackage[ngerman]\{babel\}}
-    \uncover<1->{\\usepackage\{amsfonts, amsmath, amssymb\}}
-    \uncover<1->{\alert<1>{\\usepackage\{graphicx\}}}
-  \end{semiverbatim}
-\end{frame}
+% 
+% \subsection{Grafiken einbinden}
+% \begin{frame}[fragile]
+% \frametitle{Grafiken einbinden}
+%   \uncover<1-> {Im Header wird ein weiteres Paket benötigt, um Grafiken einbinden zu können}
+%   \begin{semiverbatim}
+%     \uncover<1->{\\documentclass[a4paper,11pt,DIV=11]\{scrartcl\}}
+%     \uncover<1->{\\usepackage[utf8]\{inputenc\}}
+%     \uncover<1->{\\usepackage[ngerman]\{babel\}}
+%     \uncover<1->{\\usepackage\{amsfonts, amsmath, amssymb\}}
+%     \uncover<1->{\alert<1>{\\usepackage\{graphicx\}}}
+%   \end{semiverbatim}
+% \end{frame}
 
 \subsection{Unterstützte Formate}
 \begin{frame}
@@ -486,20 +486,20 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
     \end{itemize}
   \end{itemize}
 \end{frame}
-
-\subsection{includegraphics}
-\begin{frame}[fragile]
-\frametitle{Grafiken einbinden}
-  \begin{semiverbatim}
-    \uncover<1->{\\begin\{figure\}}
-    \uncover<1->{  \\includegraphics[width=0.5\\textwidth]\{Aufgabe1.png\}}
-    \uncover<1->{\\end\{figure\}}
-  \end{semiverbatim}
-  \uncover<2->{%
-    \begin{figure}
-      \includegraphics[width=0.5\textwidth]{Aufgabe1.png}
-    \end{figure}}
-\end{frame}
+% 
+% \subsection{includegraphics}
+% \begin{frame}[fragile]
+% \frametitle{Grafiken einbinden}
+%   \begin{semiverbatim}
+%     \uncover<1->{\\begin\{figure\}}
+%     \uncover<1->{  \\includegraphics[width=0.5\\textwidth]\{Aufgabe1.png\}}
+%     \uncover<1->{\\end\{figure\}}
+%   \end{semiverbatim}
+%   \uncover<2->{%
+%     \begin{figure}
+%       \includegraphics[width=0.5\textwidth]{Aufgabe1.png}
+%     \end{figure}}
+% \end{frame}
 
 \subsection{Bildunterschrift}
 \begin{frame}[fragile]
@@ -702,42 +702,42 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
     \uncover<4->{auf Seite \alert<4>{\\pageref\{Diff\}} \hspace{1cm} auf Seite 3}
   \end{semiverbatim}
 \end{frame}
-
-  \subsection{Funktionenreferenz}
-  \begin{frame}[fragile]
-  \frametitle{Referenzen auf Funktionen}
-    \begin{semiverbatim}
-      \uncover<1->{\\begin\{align\}}
-      \uncover<1->{  sin(\\alpha) = \\frac\{a\}\{c\}\\\\}
-      \uncover<1->{  a^2 + b^2 = c^2 \alert<1>{\\label\{pyth\}}}
-      \uncover<1->{\\end\{align\}}
-      \uncover<1->{ }
-      \uncover<1->{ }
-      \uncover<1->{ }
-      \uncover<2->{wie Formel \alert<2>{\\ref\{pyth\}} \hspace{2cm} wie Formel 7}
-      \uncover<3->{auf Seite \alert<3>{\\pageref\{pyth\}} \hspace{1cm} auf Seite 9}
-    \end{semiverbatim}
-  \end{frame}
-
- \subsection{Tabellenreferenzen}
- \begin{frame}[fragile]
- \frametitle{Referenz auf Tabellen}
-   \begin{semiverbatim}
-     \uncover<1->{\\begin\{table\}}
-     \uncover<1->{  \\begin\{tabular\}\{|l|c|r|\}}
-     \uncover<1->{    \\hline}
-     \uncover<1->{    Tabelle & mit & drei Spalten \\\\ \\hline}
-     \uncover<1->{    aber & nur mit zwei & Zeilen \\\\ \\hline}
-     \uncover<1->{  \\end\{tabular\}}
-     \uncover<1->{  \\caption\{Einfaches Tabellenbeispiel\}\alert<1>{\\label\{bsptab\}}}
-     \uncover<1->{\\end\{table\}}
-     \uncover<1->{ }
-     \uncover<1->{ }
-     \uncover<1->{ }
-     \uncover<2->{wie Tabelle \alert<2>{\\ref\{bsptab\}} \hspace{2cm} wie Tabelle 5}
-     \uncover<2->{auf Seite \alert<2>{\\pageref\{bsptab\}} \hspace{1cm} auf Seite 97}
-   \end{semiverbatim}
- \end{frame}
+% 
+%   \subsection{Funktionenreferenz}
+%   \begin{frame}[fragile]
+%   \frametitle{Referenzen auf Funktionen}
+%     \begin{semiverbatim}
+%       \uncover<1->{\\begin\{align\}}
+%       \uncover<1->{  sin(\\alpha) = \\frac\{a\}\{c\}\\\\}
+%       \uncover<1->{  a^2 + b^2 = c^2 \alert<1>{\\label\{pyth\}}}
+%       \uncover<1->{\\end\{align\}}
+%       \uncover<1->{ }
+%       \uncover<1->{ }
+%       \uncover<1->{ }
+%       \uncover<2->{wie Formel \alert<2>{\\ref\{pyth\}} \hspace{2cm} wie Formel 7}
+%       \uncover<3->{auf Seite \alert<3>{\\pageref\{pyth\}} \hspace{1cm} auf Seite 9}
+%     \end{semiverbatim}
+%   \end{frame}
+% 
+%  \subsection{Tabellenreferenzen}
+%  \begin{frame}[fragile]
+%  \frametitle{Referenz auf Tabellen}
+%    \begin{semiverbatim}
+%      \uncover<1->{\\begin\{table\}}
+%      \uncover<1->{  \\begin\{tabular\}\{|l|c|r|\}}
+%      \uncover<1->{    \\hline}
+%      \uncover<1->{    Tabelle & mit & drei Spalten \\\\ \\hline}
+%      \uncover<1->{    aber & nur mit zwei & Zeilen \\\\ \\hline}
+%      \uncover<1->{  \\end\{tabular\}}
+%      \uncover<1->{  \\caption\{Einfaches Tabellenbeispiel\}\alert<1>{\\label\{bsptab\}}}
+%      \uncover<1->{\\end\{table\}}
+%      \uncover<1->{ }
+%      \uncover<1->{ }
+%      \uncover<1->{ }
+%      \uncover<2->{wie Tabelle \alert<2>{\\ref\{bsptab\}} \hspace{2cm} wie Tabelle 5}
+%      \uncover<2->{auf Seite \alert<2>{\\pageref\{bsptab\}} \hspace{1cm} auf Seite 97}
+%    \end{semiverbatim}
+%  \end{frame}
 
 \subsection{Referenzen auf Aufzählungselemente}
 \begin{frame}[fragile]
@@ -767,47 +767,47 @@ Inhaltsverzeichnis kann überall erstellt werden, es empfielt sich allerdings am
    \Large Grundlegende Befehle
   \end{center}
  \end{frame}
- 
- \subsection{Grundlegende Befehle}
-  \begin{frame}[fragile]
-   \frametitle{Mathematischer Modus - Grundlagen}
-  	\begin{semiverbatim}
-  	 \uncover<1->{Eine Formel: \alert<1>{\\(}a=b-c\alert<1>{\\)}}
-  	\end{semiverbatim}
-  	\uncover<1->{Eine Formel: \(a=b-c\)}
-  	\begin{semiverbatim}
-  	 \uncover<2->{\\(a\alert<2>{^}2+b\alert<2>{^}2=c\alert<2>{^}2\\) ist der Satz des Pythagoras.}
-  	\end{semiverbatim}
-  	\uncover<2->{\(a^2+b^2=c^2\) ist der Satz des Pythagoras.}
-  	\begin{semiverbatim}
-  	 \uncover<3->{\\(\alert<3>{\\sqrt\{x_1\}}=x_2\\)}
-  	\end{semiverbatim}
-  	\uncover<3->{\(\sqrt{x_1}=x_2\)}
-  	\begin{semiverbatim}
-  	 \uncover<4->{\\(\alert<4>{\\frac\{a+b\}\{ab\}}\\)}
-  	\end{semiverbatim}
-  	\uncover<4->{\(\frac{a+b}{ab}\)}
-  \end{frame}
- 
-  \begin{frame}[fragile]
-   \frametitle{Mathematischer Modus - Grundlagen}
-  	\begin{semiverbatim}
-  	 \uncover<1->{\\(\alert<1>{\\sin \\alpha} = \\frac\{a\}\{c\}\\)}
-  	\end{semiverbatim}
-  	\uncover<1->{\(\sin \alpha = \frac{a}{c}\)}
-  	\begin{semiverbatim}
-  	 \uncover<2->{\\(\alert<2>{\\delta \\neq \\Delta}\\)}
-  	\end{semiverbatim}d
-  	\uncover<2->{\(\delta \neq \Delta\)}
-  	\begin{semiverbatim}
-  	 \uncover<3->{\\(\\phi \alert<3>{\\cdot} \\varphi = ?\\)}
-  	\end{semiverbatim}
-  	\uncover<3->{\(\phi \cdot \varphi = ?\)}
-  	\begin{semiverbatim}
-  	 \uncover<4->{\\(\\frac\{\alert<4>{\\text\{Zähler\}}\}\{\alert<4>{\\text\{Nenner\}}\}\\)}
-  	\end{semiverbatim}
-  	\uncover<4->{\(\frac{\text{Zähler}}{\text{Nenner}}\)}
-  \end{frame}
+%  
+%  \subsection{Grundlegende Befehle}
+%   \begin{frame}[fragile]
+%    \frametitle{Mathematischer Modus - Grundlagen}
+%   	\begin{semiverbatim}
+%   	 \uncover<1->{Eine Formel: \alert<1>{\\(}a=b-c\alert<1>{\\)}}
+%   	\end{semiverbatim}
+%   	\uncover<1->{Eine Formel: \(a=b-c\)}
+%   	\begin{semiverbatim}
+%   	 \uncover<2->{\\(a\alert<2>{^}2+b\alert<2>{^}2=c\alert<2>{^}2\\) ist der Satz des Pythagoras.}
+%   	\end{semiverbatim}
+%   	\uncover<2->{\(a^2+b^2=c^2\) ist der Satz des Pythagoras.}
+%   	\begin{semiverbatim}
+%   	 \uncover<3->{\\(\alert<3>{\\sqrt\{x_1\}}=x_2\\)}
+%   	\end{semiverbatim}
+%   	\uncover<3->{\(\sqrt{x_1}=x_2\)}
+%   	\begin{semiverbatim}
+%   	 \uncover<4->{\\(\alert<4>{\\frac\{a+b\}\{ab\}}\\)}
+%   	\end{semiverbatim}
+%   	\uncover<4->{\(\frac{a+b}{ab}\)}
+%   \end{frame}
+%  
+%   \begin{frame}[fragile]
+%    \frametitle{Mathematischer Modus - Grundlagen}
+%   	\begin{semiverbatim}
+%   	 \uncover<1->{\\(\alert<1>{\\sin \\alpha} = \\frac\{a\}\{c\}\\)}
+%   	\end{semiverbatim}
+%   	\uncover<1->{\(\sin \alpha = \frac{a}{c}\)}
+%   	\begin{semiverbatim}
+%   	 \uncover<2->{\\(\alert<2>{\\delta \\neq \\Delta}\\)}
+%   	\end{semiverbatim}d
+%   	\uncover<2->{\(\delta \neq \Delta\)}
+%   	\begin{semiverbatim}
+%   	 \uncover<3->{\\(\\phi \alert<3>{\\cdot} \\varphi = ?\\)}
+%   	\end{semiverbatim}
+%   	\uncover<3->{\(\phi \cdot \varphi = ?\)}
+%   	\begin{semiverbatim}
+%   	 \uncover<4->{\\(\\frac\{\alert<4>{\\text\{Zähler\}}\}\{\alert<4>{\\text\{Nenner\}}\}\\)}
+%   	\end{semiverbatim}
+%   	\uncover<4->{\(\frac{\text{Zähler}}{\text{Nenner}}\)}
+%   \end{frame}
 
 \subsection{Absatz}
 \begin{frame}[fragile]
@@ -1219,26 +1219,26 @@ Ein Absatz unter der Gleichung
     \caption{Aufgabe 1}
   \end{figure}
 \end{frame}
- 
- \subsection{Seitenlayout}
- \begin{frame}[fragile]
- \frametitle{Seitenlayout}
-   \begin{semiverbatim}
-     \uncover<1->{\\begin\{frame\}}
-     \uncover<1->{\\frametitle\{Geordnete Folie\}}
-     \uncover<2->{  \\begin\{figure\}}
-     \uncover<3->{    \\begin\{minipage\}\{0.49\\textwidth\}}
-     \uncover<4->{      \\includegraphics[width=\\textwidth]\{Aufgabe1.png\}}
-     \uncover<3->{    \\end\{minipage\}\\pause}
-     \uncover<5->{    \\begin\{minipage\}\{0.49\\textwidth\}}
-     \uncover<6->{      \\begin\{itemize\}}
-     \uncover<7->{        \\item Diese Aufgabe ist sinnvoll}
-     \uncover<6->{      \\end\{itemize\}}
-     \uncover<5->{    \\end\{minipage\}}
-     \uncover<2->{  \\end\{figure\}}
-     \uncover<1->{\\end\{frame\}}
-   \end{semiverbatim}
- \end{frame}
+%  
+%  \subsection{Seitenlayout}
+%  \begin{frame}[fragile]
+%  \frametitle{Seitenlayout}
+%    \begin{semiverbatim}
+%      \uncover<1->{\\begin\{frame\}}
+%      \uncover<1->{\\frametitle\{Geordnete Folie\}}
+%      \uncover<2->{  \\begin\{figure\}}
+%      \uncover<3->{    \\begin\{minipage\}\{0.49\\textwidth\}}
+%      \uncover<4->{      \\includegraphics[width=\\textwidth]\{Aufgabe1.png\}}
+%      \uncover<3->{    \\end\{minipage\}\\pause}
+%      \uncover<5->{    \\begin\{minipage\}\{0.49\\textwidth\}}
+%      \uncover<6->{      \\begin\{itemize\}}
+%      \uncover<7->{        \\item Diese Aufgabe ist sinnvoll}
+%      \uncover<6->{      \\end\{itemize\}}
+%      \uncover<5->{    \\end\{minipage\}}
+%      \uncover<2->{  \\end\{figure\}}
+%      \uncover<1->{\\end\{frame\}}
+%    \end{semiverbatim}
+%  \end{frame}
 
 \begin{frame}
 \frametitle{Geordnete Folie}
@@ -1253,44 +1253,44 @@ Ein Absatz unter der Gleichung
     \end{minipage}
   \end{figure}
 \end{frame}
-
- \begin{frame}[fragile]
- \frametitle{Seitenlayout}
-   \begin{semiverbatim}
-     \uncover<1->{\\begin\{frame\}}
-     \uncover<1->{\\frametitle\{Geordnete Folie\}}
-     \uncover<1->{  \\begin\{figure\}}
-     \uncover<1->{    \alert<1>{\\uncover<2->\{\%}}
-     \uncover<1->{    \\begin\{minipage\}\{0.49\\textwidth\}}
-     \uncover<1->{      \\includegraphics[width=\\textwidth]\{Aufgabe1.png\}}
-     \uncover<1->{    \\end\{minipage\}\alert<1>{\}}}
-     \uncover<1->{    \alert<1>{\\uncover<1->\{\%}}
-     \uncover<1->{    \\begin\{minipage\}\{0.49\\textwidth\}}
-     \uncover<1->{      \\begin\{itemize\}}
-     \uncover<1->{        \\item Dieser Graph soll später erscheinen}
-     \uncover<1->{      \\end\{itemize\}}
-     \uncover<1->{    \\end\{minipage\}\alert<1>{\}}}
-     \uncover<1->{  \\end\{figure\}}
-     \uncover<1->{\\end\{frame\}}
-   \end{semiverbatim}
- \end{frame}
-
-\begin{frame}
-\frametitle{Geordnete Folie}
-  \begin{figure}
-	 \uncover<2->{%
-    \begin{minipage}{0.49\textwidth}
-      \includegraphics[width=\textwidth]{Aufgabe1.png}
-    \end{minipage}}
-	 \uncover<1->{%
-    \begin{minipage}{0.49\textwidth}
-      \begin{itemize}
-	\item Dieser Graph soll später erscheinen
-      \end{itemize}
-    \end{minipage}}
-  \end{figure}
-\end{frame}
-
+% 
+%  \begin{frame}[fragile]
+%  \frametitle{Seitenlayout}
+%    \begin{semiverbatim}
+%      \uncover<1->{\\begin\{frame\}}
+%      \uncover<1->{\\frametitle\{Geordnete Folie\}}
+%      \uncover<1->{  \\begin\{figure\}}
+%      \uncover<1->{    \alert<1>{\\uncover<2->\{\%}}
+%      \uncover<1->{    \\begin\{minipage\}\{0.49\\textwidth\}}
+%      \uncover<1->{      \\includegraphics[width=\\textwidth]\{Aufgabe1.png\}}
+%      \uncover<1->{    \\end\{minipage\}\alert<1>{\}}}
+%      \uncover<1->{    \alert<1>{\\uncover<1->\{\%}}
+%      \uncover<1->{    \\begin\{minipage\}\{0.49\\textwidth\}}
+%      \uncover<1->{      \\begin\{itemize\}}
+%      \uncover<1->{        \\item Dieser Graph soll später erscheinen}
+%      \uncover<1->{      \\end\{itemize\}}
+%      \uncover<1->{    \\end\{minipage\}\alert<1>{\}}}
+%      \uncover<1->{  \\end\{figure\}}
+%      \uncover<1->{\\end\{frame\}}
+%    \end{semiverbatim}
+%  \end{frame}
+% 
+% \begin{frame}
+% \frametitle{Geordnete Folie}
+%   \begin{figure}
+% 	 \uncover<2->{%
+%     \begin{minipage}{0.49\textwidth}
+%       \includegraphics[width=\textwidth]{Aufgabe1.png}
+%     \end{minipage}}
+% 	 \uncover<1->{%
+%     \begin{minipage}{0.49\textwidth}
+%       \begin{itemize}
+% 	\item Dieser Graph soll später erscheinen
+%       \end{itemize}
+%     \end{minipage}}
+%   \end{figure}
+% \end{frame}
+% 
 
 \begin{frame}
  \begin{center}
